@@ -30,7 +30,7 @@ class CartItem extends StatelessWidget {
               ),
               FlatButton(
                 onPressed: () => Navigator.of(ctx).pop(true),
-                child: Text('YES'),
+                child: Text('Yes'),
               ),
             ],
           ),
