@@ -21,9 +21,8 @@ class _OrdersScreenState extends State<OrdersScreen> {
         _isLoading = true;
       });
       await Provider.of<Orders>(context, listen: false).fetchAndSetOrders();
-      setState(() {
-        _isLoading = false;
-      });
+
+      _isLoading = false;
     });
 
     super.initState();
